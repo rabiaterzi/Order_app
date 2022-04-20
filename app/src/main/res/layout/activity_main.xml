@@ -7,12 +7,83 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TEST"
+        android:fontFamily="sans-serif-black"
+        android:text="Kayıt Ol"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <EditText
+        android:id="@+id/editTextAd"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ad"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <EditText
+        android:id="@+id/editTextSoyad"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Soyad"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAd"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSoyad"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <EditText
+        android:id="@+id/editTextSifre"
+        android:layout_width="312dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text|numberPassword"
+        android:text="Şifre"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="KVKK Aydınlatma Metnini Okudum, Kabul Ediyorum."
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSifre"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="194dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:text="Kayıt Ol"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:layout_editor_absoluteX="109dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
